@@ -1,0 +1,108 @@
+.movie-card {
+  margin: 1rem 1.5rem;
+  padding: 1rem;
+  width: 90%;
+  max-width: 18rem;
+  border: 1px solid white;
+  box-shadow: 5px 5px #aaaaaa;
+  position: relative;
+}
+
+#card-title {
+  font-size: 1.1rem;
+}
+
+.genres {
+  margin: 0 0 1.5rem;
+  width: 16rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.genre-card {
+  margin: 5px 5px 5px 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.movie-card .footer {
+  width: 16rem;
+  bottom: 0;
+  left: 2rem;
+  position: absolute;
+}
+
+#card-price {
+  color: red;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.btn {
+  margin: 0 1.5rem 1rem 0;
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-card {
+    padding: 0 1rem;
+    max-width: 14rem;
+  }
+
+  .genres {
+    padding: 0.5rem 0;
+    width: 11rem;
+  }
+
+  .genre-card {
+    margin: 0 0.5rem 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .movie-card .footer {
+    width: 11rem;
+  }
+
+  #card-price {
+    color: red;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .movie-card {
+    padding: 2.5rem 0 0;
+    max-width: 10rem;
+  }
+
+  .genres {
+    padding: 0.5rem 0;
+    width: 8rem;
+  }
+
+  .genre-card {
+    margin: 2.5px 2.5px 2.5px 0;
+    font-size: 0.75rem;
+  }
+
+  .movie-card .footer {
+    width: 8rem;
+  }
+
+  #card-price {
+    color: red;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  .btn {
+    margin: 0 0.5rem 0.25rem 0;
+    float: right;
+    font-size: 0.75rem;
+  }
+}

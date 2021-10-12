@@ -1,0 +1,212 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  background-color: rgba(3, 37, 65, 1);
+  cursor: pointer;
+  position: relative;
+}
+
+.left-nav {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logo {
+  padding-left: 1rem;
+  padding-right: 2rem;
+  color: white;
+  font-size: 1.75rem;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.logo:hover {
+  color: rgb(207, 207, 207);
+}
+
+.subnavbtn {
+  margin-top: 0.25rem;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.subnav-content {
+  display: none;
+  justify-content: space-between;
+
+  margin: 0 0 0 2rem;
+  padding: 1rem 1rem 0;
+  width: 15%;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.popular,
+.now-playing,
+.top-rated {
+  text-decoration: none;
+  color: black;
+}
+
+.popular:hover,
+.now-playing:hover,
+.top-rated:hover {
+  color: rgb(87, 87, 87);
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.right-nav {
+  margin-right: 5rem;
+  float: right;
+}
+
+.cart {
+  font-size: 3rem;
+  text-decoration: none;
+  color: red;
+}
+
+.cart:hover {
+  color: rgb(250, 57, 57);
+}
+
+/* 992px or down */
+@media screen and (max-width: 992px) {
+  .subnav-content {
+    width: 15%;
+  }
+  .right-nav {
+    margin-right: 3.5rem;
+  }
+}
+
+/* 768px or down */
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  .subnavbtn {
+    font-size: 1rem;
+  }
+  .subnav-content {
+    width: 20%;
+  }
+  .popular,
+  .now-playing,
+  .top-rated {
+    font-size: 0.8rem;
+  }
+  .right-nav {
+    margin-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+  .subnavbtn {
+    font-size: 0.8rem;
+  }
+  .subnav-content {
+    width: 30%;
+  }
+  .popular,
+  .now-playing,
+  .top-rated {
+    font-size: 0.8rem;
+  }
+  .right-nav {
+    margin: 0 2.5rem 1rem 0;
+  }
+  .cart {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .navbar {
+    margin-right: -21.6rem;
+  }
+  .logo {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+  }
+  .subnavbtn {
+    font-size: 0.9rem;
+  }
+  .subnav-content {
+    width: 30%;
+  }
+  .right-nav {
+    margin-right: 2rem;
+  }
+  .cart {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    margin-right: -10rem;
+  }
+  .logo {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+  }
+  .subnavbtn {
+    font-size: 0.9rem;
+  }
+  .subnav-content {
+    width: 40%;
+    font-size: 0.75rem;
+  }
+  .right-nav {
+    margin-right: 2rem;
+  }
+  .cart {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .navbar {
+    margin-right: -14rem;
+  }
+  .logo {
+    margin-top: 0.2rem;
+    margin-left: -1rem;
+    font-size: 0.75rem;
+  }
+  .subnavbtn {
+    font-size: 0.6rem;
+  }
+  .subnav-content {
+    width: 40%;
+    font-size: 0.5rem;
+  }
+  .right-nav {
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+  .cart {
+    font-size: 1rem;
+  }
+}
